@@ -37,12 +37,10 @@ client-query-management-system/
 │ └─ 2_Support_Dashboard.py
 └─ assets
 
-
 ---
 
 ## 🚀 Quick Start
 
-```bash
 # 1) Clone
 git clone <YOUR-REPO-URL>
 cd client-query-management-system
@@ -61,7 +59,6 @@ pip install -r requirements.txt
 # 4) Run
 python -m streamlit run app.py
 
-
 Open http://localhost:8501
 
 🔐 First Use
@@ -75,6 +72,7 @@ Use the sidebar links to open Client Submission or Support Dashboard.
 The first run auto-loads seed tickets from data/seed_queries.csv.
 
 🧭 How to Use
+
 Client Submission
 
 Fill Email, Mobile, Heading, Description
@@ -147,6 +145,15 @@ Support features (filters, notes, bulk actions): pages/2_Support_Dashboard.py
 
 DB logic/schema: db.py
 
+## Problem Statement
+Build a Client Query Management System that allows:
+- Clients to submit issues (email/phone, heading, description, optional screenshot)
+- Support to view, search, filter (All/Open/In Progress/Closed), update status, add internal notes, and export CSV
+- Basic analytics on the landing page (live counts, donut of Open vs Closed, 14-day trend)
+- Local persistence using SQLite with seed data
+- Simple auth with roles (Client/Support)
+
+Deliverables: working Streamlit app, source code on GitHub, README with setup, and deployed Streamlit Cloud URL.
 
 📄 License
 
